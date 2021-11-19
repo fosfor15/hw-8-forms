@@ -1,0 +1,11 @@
+
+form {
+    background-color: rgb(221, 217, 217);
+    padding: 15px;
+    width: 70%;
+}
+
+fieldset {
+    border: none;
+    background-color: rgb(230, 230, 230);;
+}

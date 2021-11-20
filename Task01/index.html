@@ -9,8 +9,12 @@
 </head>
 <body>
 
+    <!-- Необходимо было ограничить ширину интерфейса -->
+
      <form action method="GET" name="myForm" autocomplete="off" tabindex="0">
 
+        <!-- В этом table будут выводится сообщения, он не будет иметь элементов-контролов формы и т.о. этот table не будет являться частью формы, следовательно его не верно располагать в элементе form.
+        Также элемент table используется для разметки и представления только табличных данных и не используется для расположения каки-либо иных информационных или функциональных блоков. -->
         <table class="table">
             <tr>
                 <td class="name">
@@ -27,11 +31,17 @@
 
         <div>
             <label for="name">Your name:</label>
+            
             <textarea name="name" id="name" cols="30" rows="10"></textarea>
+            <!-- Здесь больше подойдёт input с типом text -->
+
         </div>
         <div>
             <label for="name">Write message:</label>
+
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <!-- Текстовые области стоило ограничить в изменении размеров через применение свойства resize -->
+            
         </div>
         <div>
             <input type="button" id="button" value="Send">

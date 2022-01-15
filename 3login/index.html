@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="" method="post" name="myForm" onsubmit="return false"> 
+            <label for="login">Your login</label>
+            <input type="text" name="login" id="login" required>
+            <br>
+            <label for="password">Your password</label>
+            <input type="text" name="password" id="password" required>
+            <br>
+            <label for="remember" id="rem">Remember me</label>
+            <input type="checkbox" name="remember" id="remember" class="rem">
+            <br>
+            <button type="submit" onclick="submiting(); regexpTest()" id="submit">Sign up</button>
+            <br>
+            <a href="" id="a" onclick="remindPass()">Forgot password?</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

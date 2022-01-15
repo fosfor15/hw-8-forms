@@ -1,0 +1,35 @@
+
+body {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    font-size: small;
+    margin: 10px;
+    padding: 15px;
+    width: 450px;
+    display: block;
+    background-color: antiquewhite;
+}
+
+.col-lg-6 {
+    border: 1px solid rgb(73, 45, 45);
+    margin: 5px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+#comment-body {
+    max-width: 300px;
+}
+
+input,label {
+    margin: 15px;
+}
+
+.button {
+    padding: 10px;
+}

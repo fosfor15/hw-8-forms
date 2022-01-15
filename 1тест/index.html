@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<form name="questions">
+    <div class="test">
+        <pre> 1. Что выведет функция alert?
+            alert(str); // ?
+            let str = "Hello";
+        </pre>
+            
+        <input class="radio" type="radio" name="q1" value="a" /> <span>Hello</span>
+        <br>
+        <input class="radio" type="radio" name="q1" value="b" /> <span>Выведет ошибку //</span> 
+        <br>
+        <input class="radio" type="radio" name="q1" value="c" /> <span>Undefined</span> 
+
+    </div>
+
+    <div class="test">
+        <pre> 2. Что выведет этот код?
+            function User() { }
+            User.prototype = { admin: false };
+            
+            let user = new User();
+            alert(user.admin);
+        </pre>
+
+        <input class="radio" type="radio" name="q2" value="a" /> <span>false//</span> 
+        <br>
+        <input class="radio" type="radio" name="q2" value="b" /> <span>Undefined</span> 
+        <br>
+        <input class="radio" type="radio" name="q2" value="c" /> <span>true</span>
+
+    </div>
+
+    <div class="test">
+        <p> 3. Сколько параметров можно передать функции ?</p>
+
+        <input class="radio" type="radio" name="q3" value="a" /> <span>Ровно столько, сколько указано в определении функции.</span>
+        <br>
+        <input class="radio" type="radio" name="q3" value="b" /> <span>Сколько указано в определении функции или меньше.</span>
+        <br>
+        <input class="radio" type="radio" name="q3" value="c" /> <span>Любое количество//</span>
+        
+    </div>
+
+    <div class="button">
+        <input type="button" value="Check the answers" onclick="check()">
+    </div>
+    
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>

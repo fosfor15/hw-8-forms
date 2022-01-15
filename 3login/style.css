@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 15px;
+    padding: 20px;
+    width: max-content;
+    background-color: cadetblue;
+}
+
+#login {
+    margin-left: 31px;
+}
+
+button {
+    margin: 17px;
+}
+
+.rem {
+    margin-right: 135px;
+    margin-top: 10px;
+}
+
+#rem {
+    font-size: 12px;
+}
+
+#a {
+    margin-left: 80px;
+
+    font-size: smaller;
+}

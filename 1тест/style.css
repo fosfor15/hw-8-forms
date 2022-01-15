@@ -1,0 +1,28 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test, #result {
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    background-color: antiquewhite;
+}
+
+.radio {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button {
+    margin: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+
+
+
+
+
+

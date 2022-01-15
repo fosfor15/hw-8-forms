@@ -3,6 +3,8 @@ let comments = [];
 loadComments();
 
 document.getElementById('comment-add').onclick = function(){
+    // После круглых скобок у функции и между открывающей фигурной скобкой традиционно используется 1 пробел
+
    let commentName = document.getElementById('comment-name');
    let commentBody = document.getElementById('comment-body');
 
@@ -10,7 +12,7 @@ document.getElementById('comment-add').onclick = function(){
       name : commentName.value,
       body : commentBody.value,
       time : Math.floor(Date.now() / 1000)
-   }
+   } // ; – окончание операции с присваиванием
 
    commentName.value = '';
    commentBody.value = '';
@@ -25,6 +27,7 @@ function saveComments(){
 }
 
 function loadComments(){
+    // Для наглядности лучше записывать блоки кода в конструкциях if с новой строки, а не на строке с условием
    if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
    showComments();
 }
@@ -51,5 +54,10 @@ function timeConverter(UNIX_timestamp){
    let sec = a.getSeconds();
    let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
    return time;
+
+    // У объекта даты и времени Date есть набор методов, которые позволяют получить строку с датой или временем для вывода, ссылки:
+    // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString,
+    // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString,
+    // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString.
 }
 

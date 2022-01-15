@@ -11,6 +11,8 @@ function regexpTest(loginName, pass) {
     const regexpPass = /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$/
     var resultLogin = regexpLogin.test(loginName);
     var resultPass = regexpPass.test(pass);
+
+    // Конструкции if должны отделяться пустыми строками от соседнего кода на том же уровне вложенности
     if ((resultLogin == false) || (resultPass == false)) {
         if (resultLogin == false) {
             alert('Login is not safety, it recomended to be chandge');
